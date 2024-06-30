@@ -33,13 +33,13 @@ export default function Home() {
         <li>
           <a
             className="underline underline-offset-4 hover:text-purple-500 duration-150 transition-all"
-            href="mailto:askarialiwork@gmail.com"
+            href="mailto:askarialidev+site@gmail.com"
             target="_blank"
           >
             E-mail
           </a>
         </li>
-        <li>
+{/*         <li>
           <a
             className="underline underline-offset-4 hover:text-purple-500 duration-150 transition-all"
             href="https://calendly.com/askarialiwork/15-min"
@@ -47,7 +47,7 @@ export default function Home() {
           >
             Book a Meeting
           </a>
-        </li>
+        </li> */}
       </ul>
     </main>
   );
