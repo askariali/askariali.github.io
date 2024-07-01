@@ -1,3 +1,6 @@
+import { Badge, badgeVariants } from "@/components/ui/badge";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="text-center sm:text-left flex min-h-screen flex-col items-center justify-center space-y-4 px-4">
@@ -11,10 +14,29 @@ export default function Home() {
         <strong>HTML,</strong>
         <strong>CSS</strong>
       </h3>
-      <ul className="flex flex-col sm:flex-row gap-4 !mt-8">
+      <div>
+        <Link
+          className={badgeVariants({ variant: "outline", className:"group" })}
+          href={`/blog/1`}
+        >
+          <span className="text-sm font-medium">Latest post:</span>&nbsp;
+          <h3 className="text-sm text-muted-foreground duration-150 transition-all group-hover:text-primary">
+            Latest blog post title ...
+          </h3>
+        </Link>
+      </div>
+      <ul className="flex flex-col sm:flex-row gap-4">
+        <li>
+          <Link
+            className="underline underline-offset-4 hover:text-primary duration-150 transition-all"
+            href="/blog"
+          >
+            Blog
+          </Link>
+        </li>
         <li>
           <a
-            className="underline underline-offset-4 hover:text-purple-500 duration-150 transition-all"
+            className="underline underline-offset-4 hover:text-primary duration-150 transition-all"
             href="https://github.com/askariali"
             target="_blank"
           >
@@ -23,7 +45,7 @@ export default function Home() {
         </li>
         <li>
           <a
-            className="underline underline-offset-4 hover:text-purple-500 duration-150 transition-all"
+            className="underline underline-offset-4 hover:text-primary duration-150 transition-all"
             href="https://linkedin.com/in/askariali"
             target="_blank"
           >
@@ -32,16 +54,16 @@ export default function Home() {
         </li>
         <li>
           <a
-            className="underline underline-offset-4 hover:text-purple-500 duration-150 transition-all"
+            className="underline underline-offset-4 hover:text-primary duration-150 transition-all"
             href="mailto:askarialidev+site@gmail.com"
             target="_blank"
           >
-            E-mail
+            E-Mail
           </a>
         </li>
-{/*         <li>
+        {/*         <li>
           <a
-            className="underline underline-offset-4 hover:text-purple-500 duration-150 transition-all"
+            className="underline underline-offset-4 hover:text-primary duration-150 transition-all"
             href="https://calendly.com/askarialiwork/15-min"
             target="_blank"
           >

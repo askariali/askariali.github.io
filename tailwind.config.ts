@@ -13,9 +13,9 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
       screens: {
-        "2xl": "1400px",
+        "lg": "780px",
       },
     },
     extend: {
@@ -75,6 +75,7 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        silkscreen: ["var(--font-silkscreen)"],
       },
     },
   },
