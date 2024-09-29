@@ -24,6 +24,15 @@ export default function Home() {
         <li>
           <a
             className="underline underline-offset-4 hover:text-purple-500 duration-150 transition-all"
+            href="https://medium.com/@askariali.dev"
+            target="_blank"
+          >
+            Medium
+          </a>
+        </li>
+        <li>
+          <a
+            className="underline underline-offset-4 hover:text-purple-500 duration-150 transition-all"
             href="https://linkedin.com/in/askariali"
             target="_blank"
           >
